@@ -1,7 +1,7 @@
-function DateInput({ id, label }){
+function DateInput({ id, label, handleChange }){
     return <div>
         <label htmlFor={id}>{label}</label>
-        <input id={id} key={id} type="month" />
+        <input id={id} name={id} type="month" onChange={event => handleChange(event)} />
     </div>
 
 }
