@@ -5,7 +5,6 @@ import ExperienceForm from "./ExperienceForm"
 
 function Form() {
     return <div>
-        <h2>CV Builder Inputs</h2>
         <GeneralForm />
         <EducationForm />
         <ExperienceForm />
