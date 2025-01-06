@@ -1,11 +1,12 @@
 import TextInput from "./TextInput";
 
 function GeneralForm() {
-    return <div>
-        <TextInput field="Name" />
-        <TextInput field="Email" />
-        <TextInput field="Phone" />
-
+    const fields = ["Name", "Email", "Phone"];
+    return <div className="form general">
+        <h3>General Details</h3>
+        {fields.map((field) => (
+            <TextInput key={field} field={field} />
+        ))}
     </div>
 }
 
