@@ -20,6 +20,14 @@ input {
     color: var(--primary-bg-color);
 }
 
+textarea {
+    font-size: inherit;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color); 
+}
+
 ::placeholder {
     color: inherit;
     opacity: 75%;

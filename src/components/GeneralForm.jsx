@@ -5,7 +5,7 @@ function GeneralForm() {
     return <div className="form general">
         <h3>General Details</h3>
         {fields.map((field) => (
-            <TextInput key={field} field={field} />
+            <TextInput key={field} label={field + ': '} id={field} field={field} />
         ))}
     </div>
 }
