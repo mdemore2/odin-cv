@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from './components/Header.jsx'
 import Form from './components/Form.jsx'
+import CV from "./components/CV.jsx";
 import './App.css'
 
 
@@ -14,7 +15,7 @@ function App() {
 
     return <div className="App">
         <Header editForm={editForm} onClickFunc={onToggleClick} />
-        <Form />
+        {editForm ? <Form /> : <CV />}
     </div>
 }
 
