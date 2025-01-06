@@ -5,7 +5,7 @@ import TextAreaInput from "./TextAreaInput";
 function ExperienceForm() {
     const fields = ["Employer", "Position"];
     return <div className="form general">
-        <h3>Education Details</h3>
+        <h3>Experience Details</h3>
         {fields.map((field) => (
             <TextInput key={field} label={field + ': '} id={field} field={field} />
         ))}
