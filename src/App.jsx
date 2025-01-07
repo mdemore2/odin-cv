@@ -12,10 +12,17 @@ function App() {
         setEditForm(!editForm);
     }
 
+    const [formData, setFormData] = useState({})
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevFormData) => ({...prevFormData, [name]: value}));
+        console.log(`${name} : ${value}`);
+    };
+
 
     return <div className="App">
         <Header editForm={editForm} onClickFunc={onToggleClick} />
-        {editForm ? <Form /> : <CV />}
+        {editForm ? <Form formData={formData} handleChange={handleChange} /> : <CV formData={formData}/>}
     </div>
 }
 

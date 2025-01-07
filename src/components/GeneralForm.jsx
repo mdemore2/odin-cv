@@ -5,7 +5,7 @@ function GeneralForm(formData, handleChange) {
     return <div className="form general">
         <h3>General Details</h3>
         {generalFields.map((field) => (
-            <TextInput key={field} label={field + ': '} id={field}  handleChange={() => handleChange} />
+            <TextInput key={field} label={field + ': '} id={field}  handleChange={handleChange} />
         ))}
     </div>
 }

@@ -1,7 +1,7 @@
-function TextInput({ label, id, handleChange}) {
+function TextInput({ label, id, formData, handleChange}) {
     return <div>
         <label htmlFor={id}>{label}</label>
-        <input id={id} type="text"  name={id} onChange={event => handleChange(event)} ></input>
+        <input id={id} type="text"  name={id} value={formData[id]} onChange={event => handleChange(event)} ></input>
     </div>
 }
 
