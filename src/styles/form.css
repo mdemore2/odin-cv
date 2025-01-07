@@ -9,7 +9,15 @@
     color: inherit;
     margin-left: 15%;
     margin-right: 15%;
+    align-items: start;
 
+}
+
+.form-input {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -18,17 +26,26 @@ input {
     border-radius: 8px;
     background-color: var(--primary-color);
     color: var(--primary-bg-color);
+    text-align: left;
+
 }
 
 textarea {
+    text-align: left;
     font-size: inherit;
     padding: 4px;
     border-radius: 8px;
     background-color: var(--primary-color);
     color: var(--primary-bg-color); 
+    flex-grow: 3;
+
 }
 
 ::placeholder {
     color: inherit;
     opacity: 75%;
+}
+
+label {
+    text-align: left;
 }
