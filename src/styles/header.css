@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header > button {
+    flex: 1;
+}
+
+.header > h1 {
+    flex: 4;
+}

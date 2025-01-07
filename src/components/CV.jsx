@@ -22,8 +22,10 @@ function CV({formData}) {
             <h1>Education</h1>
             <hr></hr>
             <br></br>
-            <h2>{formData['School Name']}</h2>
-            <p>{formatDate(formData['educationStart'])} - {formatDate(formData['educationEnd'])}</p>
+            <span>
+                <h2>{formData['School Name']}</h2>
+                <p>{formatDate(formData['educationStart'])} - {formatDate(formData['educationEnd'])}</p>
+            </span>
             <p>{formData['Field of Study']}</p>
         </div>
         <br></br>
@@ -32,8 +34,11 @@ function CV({formData}) {
             <hr></hr>
             <br></br>
             <h2>{formData['Employer']}</h2>
-            <h3>{formData['Position']}</h3>
-            <p>{formatDate(formData['jobStart'])} - {formatDate(formData['jobEnd'])}</p>
+            <span>
+                <h3>{formData['Position']}</h3>
+                <p>{formatDate(formData['jobStart'])} - {formatDate(formData['jobEnd'])}</p>
+            </span>
+            <br></br>
             <p>{formData['jobDescription']}</p>
         </div>
 

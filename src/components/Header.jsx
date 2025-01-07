@@ -1,8 +1,10 @@
 import EditToggle from "./EditToggle";
+import '../styles/header.css'
+
 
 function Header({editForm, onClickFunc}){
     return <div className="header">
-        <h2>CV Builder</h2>
+        <h1>CV Builder</h1>
         <EditToggle editForm={editForm} onClickFunc={onClickFunc} />
 
     </div>
