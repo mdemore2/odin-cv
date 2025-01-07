@@ -1,0 +1,55 @@
+.cv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    margin: 8px;
+    font-size: 16px;
+    background-color: inherit;
+    color: inherit;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: start;
+    text-align: left;
+
+}
+
+hr {
+    width: 100%;
+    text-align: left;
+    margin-left: 0";
+}
+
+.cv-general {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+}
+
+
+.cv-education {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+
+.cv-experience {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+p {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+
